@@ -2,15 +2,15 @@ print("Estás atrapado en una zona de cuarentena abandonada.")
 print("Puedes entrar a una TIENDA saqueada")
 print("subir una ESCALERA o")
 print("cruzar un TÚNEL oscuro, que haces?")
-eleccion1 = input("¿Qué haces? (TIENDA, ESCALERA o TÚNEL): ").strip().lower()
+eleccion1 = input("¿Qué haces? (TIENDA, ESCALERA o TÚNEL): ").lower()
 
 if eleccion1 == "tienda":
-    print("\nDentro de la tienda hay una MOCHILA en el suelo y una PUERTA trasera abierta.")
-    eleccion2 = input("¿Revisas la MOCHILA o cruzas la PUERTA?: ").strip().lower()
+    print("Dentro de la tienda hay una MOCHILA en el suelo y una PUERTA trasera abierta.")
+    eleccion2 = input("¿Revisas la MOCHILA o cruzas la PUERTA?: ").lower()
 
     if eleccion2 == "mochila":
-        print("\nEncuentras una PISTOLA, una NAVAJA y un BOTIQUÍN.")
-        eleccion3 = input("¿Qué tomas? (PISTOLA, NAVAJA, BOTIQUÍN): ").strip().lower()
+        print("Encuentras una PISTOLA, una NAVAJA y un BOTIQUÍN.")
+        eleccion3 = input("¿Qué tomas? (PISTOLA, NAVAJA, BOTIQUÍN): ").lower()
         if eleccion3 == "pistola":
             print("¡Sobreviviste! Derribas a un infectado justo a tiempo.")
         elif eleccion3 == "navaja":
@@ -21,8 +21,8 @@ if eleccion1 == "tienda":
             print("Opción no válida. Elige PISTOLA, NAVAJA o BOTIQUÍN.")
 
     elif eleccion2 == "puerta":
-        print("\nHaces ruido al cruzar. Dos chasqueadores te detectan.")
-        eleccion3 = input("¿Quieres ESCONDERTE o CORRER?: ").strip().lower()
+        print("Haces ruido al cruzar. Dos chasqueadores te detectan.")
+        eleccion3 = input("¿Quieres ESCONDERTE o CORRER?: ").lower()
         if eleccion3 == "esconderte":
             print("Te ocultas tras unos estantes. Los chasqueadores pasan de largo. ¡Sobreviviste!")
         elif eleccion3 == "correr":
@@ -33,8 +33,8 @@ if eleccion1 == "tienda":
         print("Opción no válida. Escribe MOCHILA o PUERTA.")
 
 elif eleccion1 == "escalera":
-    print("\nDesde el techo ves un REFUGIO y una FOGATA encendida.")
-    eleccion2 = input("¿Te acercas al REFUGIO o a la FOGATA?: ").strip().lower()
+    print("Desde el techo ves un REFUGIO y una FOGATA encendida.")
+    eleccion2 = input("¿Te acercas al REFUGIO o a la FOGATA?: ").lower()
     if eleccion2 == "refugio":
         print("El refugio está vacío pero seguro. ¡Sobreviviste!")
     elif eleccion2 == "fogata":
@@ -43,8 +43,8 @@ elif eleccion1 == "escalera":
         print("Opción no válida. Elige REFUGIO o FOGATA.")
 
 elif eleccion1 == "túnel" or eleccion1 == "tunel":
-    print("\nAvanzas por el túnel. Puedes ENCENDER tu linterna o IR en silencio.")
-    eleccion2 = input("¿Qué haces? (ENCENDER o IR): ").strip().lower()
+    print("Avanzas por el túnel. Puedes ENCENDER tu linterna o IR en silencio.")
+    eleccion2 = input("¿Qué haces? (ENCENDER o IR): ").lower()
     if eleccion2 == "encender":
         print("Revelas a un grupo de infectados. Te atacan. Fin del juego.")
     elif eleccion2 == "ir":
